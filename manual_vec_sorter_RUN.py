@@ -1,3 +1,10 @@
+'''
+Author: Jack Morikka.
+A programme to save vector.txt files from tiffs with imageJ vector selection
+and then to place these in the corresponding output directories with the same
+name as the vector.txt file (but without the _Vector suffix)
+'''
+
 import os
 from tkinter import *
 from tkinter import filedialog
@@ -6,7 +13,10 @@ import subprocess
 
 
 class Man_vec_sort:
-
+    '''
+    Creates a GUI window to derive from the user the input folder with tiffs
+    and output folder with LAM files which the vector.txt files will be moved into
+    '''
     def __init__(self):
 
         self.__py_file_dir = os.path.dirname(os.path.realpath(__file__))
@@ -75,24 +85,28 @@ class Man_vec_sort:
             .grid(row=11, column=2, sticky=W)
 
     def retrieve_ifolder(self):
-
+        ''' Retrieves imageJ path with file selection prompt'''
         selected_path = filedialog.askopenfilename()
         self.__imgj_path.set(selected_path)
 
     def retrieve_rfolder(self):
+        ''' Retrieves directory with tiffs path with directory selection prompt
+        '''
 
         selected_directory = filedialog.askdirectory()
         self.__rfolder.set(selected_directory)
 
 
     def retrieve_afolder(self):
+        ''' Retrieves LAM analysis Samples directory with directory selection
+        prompt'''
 
         selected_directory = filedialog.askdirectory()
         self.__afolder.set(selected_directory)
 
-
     def prompt_creator(self):
-
+        '''Creates prompt for subprocess that will call imageJ in headless
+        mode to run the macro for saving the vector.txt files'''
         prompt_items = [str(self.__rfolder.get()),
                         str(self.__afolder.get())]
 

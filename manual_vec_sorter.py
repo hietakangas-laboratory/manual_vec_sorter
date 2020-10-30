@@ -1,3 +1,9 @@
+'''
+Author: Jack Morikka.
+A programme to save vector.txt files from tiffs with imageJ vector selection
+and then to place these in the corresponding output directories with the same
+name as the vector.txt file (but without the _Vector suffix)'''
+
 import os
 import logging
 import shutil
