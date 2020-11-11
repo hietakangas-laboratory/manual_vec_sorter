@@ -28,7 +28,7 @@ def runmacros(tiff_dir, mvs_path):
 
     for root, dirs, files in os.walk(tiff_dir):
         for file in files:
-            if file.endswith(".tiff"):
+            if file.endswith(".tiff") or file.endswith(".tif"):
                 try:
                     logging.info('.tiff file discovered: %s' % file)
                     tiff_path = os.path.join(root, file)
