@@ -31,7 +31,7 @@ def runmacros(tiff_dir, mvs_path):
             if file.endswith(".tiff") or file.endswith(".tif"):
                 try:
                     logging.info('.tiff file discovered: %s' % file)
-                    tiff_path = os.path.join(root, file)
+                    tiff_path = (os.path.join(root, file)).lower()
                     IJ.runMacroFile(mvs_path + r"\vector_saver.ijm", tiff_path)
                     IJ.run("Close All")
                 except Exception as e:
@@ -51,30 +51,43 @@ def movevectorfiles(tiff_dir, analysis_dir):
                 vector_path = os.path.join(root, file)
                 vector_paths.append(vector_path)
 
-    logging.info("Attempting to copy Vector.txt files to Sample analysis files")
+    logging.info(vector_paths)
+    dirpaths = []
+
 
     for root, dirs, files in os.walk(analysis_dir):
         for dir in dirs:
-            logging.info("Sample analysis directory found: %s"% dir)
-            for text in vector_paths:
-                if dir in text:
-                    try:
-                        logging.info("Associated directory for %s found: %s" % (text, dir))
-                        dest = os.path.join(root, dir)
-                        final_dest = os.path.join(dest, os.path.basename(text))
-                        logging.info("Copying %s to %s" % (text, final_dest))
-                        shutil.copy(text, final_dest)
-                        vec_rnme = dest+"\Vector.txt"
-                        vec_csv = dest+"\Vector.csv"
-                        logging.info("Removing old Vector.csv or Vector.txt files")
-                        if os.path.exists(vec_rnme):
-                            os.remove(vec_rnme)
-                        if os.path.exists(vec_csv):
-                            os.remove(vec_csv)
-                        logging.info("Renaming %s to %s" % (final_dest, vec_rnme))
-                        os.rename(final_dest, vec_rnme)
-                    except Exception as e:
-                        logging.exception(str(e))
+            dirpath = os.path.join(root, dir)
+            logging.info("Sample analysis directory found: %s"% dirpath)
+            dirpaths.append(dirpath)
+
+    logging.info(dirpaths)
+
+    logging.info("Attempting to copy Vector.txt files to Sample analysis files")
+
+    for vpath in vector_paths:
+        for dirpath in dirpaths:
+            #logging.info(os.path.basename(vpath))
+            #logging.info(os.path.basename(dirpath))
+            if os.path.basename(dirpath) in os.path.basename(vpath):
+                try:
+                    logging.info("Associated directory for %s found: %s" % (vpath, dirpath))
+                    final_dest = os.path.join(dirpath, os.path.basename(vpath))
+                    logging.info("Copying %s to %s" % (vpath, final_dest))
+                    shutil.move(vpath, final_dest)
+                    vec_rnme = dirpath+"\Vector.txt"
+                    logging.info(vec_rnme)
+                    vec_csv = dirpath+"\Vector.csv"
+                    logging.info(vec_csv)
+                    logging.info("Removing old Vector.csv or Vector.txt files")
+                    if os.path.exists(vec_rnme):
+                        os.remove(vec_rnme)
+                    if os.path.exists(vec_csv):
+                        os.remove(vec_csv)
+                    logging.info("Renaming %s to %s" % (final_dest, vec_rnme))
+                    os.rename(final_dest, vec_rnme)
+                except Exception as e:
+                    logging.exception(str(e))
 
     logging.info("Vector files moved")
 
