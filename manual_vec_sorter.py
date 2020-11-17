@@ -31,7 +31,7 @@ def runmacros(tiff_dir, mvs_path):
             if file.endswith(".tiff") or file.endswith(".tif"):
                 try:
                     logging.info('.tiff file discovered: %s' % file)
-                    tiff_path = (os.path.join(root, file)).lower()
+                    tiff_path = os.path.join(root, file)
                     IJ.runMacroFile(mvs_path + r"\vector_saver.ijm", tiff_path)
                     IJ.run("Close All")
                 except Exception as e:
@@ -67,9 +67,9 @@ def movevectorfiles(tiff_dir, analysis_dir):
 
     for vpath in vector_paths:
         for dirpath in dirpaths:
-            #logging.info(os.path.basename(vpath))
-            #logging.info(os.path.basename(dirpath))
-            if os.path.basename(dirpath) in os.path.basename(vpath):
+            if (os.path.basename(dirpath)).lower() in (os.path.basename(vpath)).lower():
+                logging.info((os.path.basename(vpath)).lower())
+                logging.info((os.path.basename(dirpath)).lower())
                 try:
                     logging.info("Associated directory for %s found: %s" % (vpath, dirpath))
                     final_dest = os.path.join(dirpath, os.path.basename(vpath))

@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1f50d299-822f-4020-ab2d-8d62b6b1dbb1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manual_vec_sorter.py" beforeDir="false" afterPath="$PROJECT_DIR$/manual_vec_sorter.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +37,7 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.manual_vec_sorter_RUN">
-    <configuration name="Name_Replacer_V1_JMOR (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="ManualVectorPlots" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="manual_vec_sorter_v1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -46,11 +45,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../File and Directory Name Editors" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../Programmes/LAM_master/LAM/comp" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../File and Directory Name Editors/Name_Replacer_V1_JMOR.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../Programmes/LAM_master/LAM/comp/ManualVectorPlots.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -59,7 +58,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Name_Replacer_V1_JMOR" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="istl_RUN" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="manual_vec_sorter_v1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -67,11 +66,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../File and Directory Name Editors" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../imaris_spots_to_lam/istl_RUN" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../File and Directory Name Editors/Name_Replacer_V1_JMOR.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../imaris_spots_to_lam/istl_RUN/istl_RUN.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -122,7 +121,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="stitch_RUN" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="manual_vec_sorter_v1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -130,11 +129,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../Programmes/Stitch_package_tool/src" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../imaris_spots_to_lam/istl_RUN" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../Programmes/Stitch_package_tool/src/stitch_RUN.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../imaris_spots_to_lam/istl_RUN/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -146,10 +145,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.manual_vec_sorter_RUN" />
+        <item itemvalue="Python.ManualVectorPlots" />
+        <item itemvalue="Python.istl_RUN" />
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.manual_vec_sorter" />
-        <item itemvalue="Python.Name_Replacer_V1_JMOR (1)" />
-        <item itemvalue="Python.Name_Replacer_V1_JMOR" />
-        <item itemvalue="Python.stitch_RUN" />
       </list>
     </recent_temporary>
   </component>
@@ -172,25 +171,29 @@
     </state>
     <state x="1627" y="376" key="FileChooserDialogImpl/-1920.0.1280.693/0.0.2560.1400@0.0.2560.1400" timestamp="1603719961613" />
     <state x="3140" y="288" key="FileChooserDialogImpl/0.0.1280.680/1920.9.1920.1040@1920.9.1920.1040" timestamp="1603220865679" />
-    <state width="936" height="276" key="GridCell.Tab.0.bottom" timestamp="1605303157107">
+    <state width="936" height="272" key="GridCell.Tab.0.bottom" timestamp="1605618421162">
       <screen x="1920" y="9" width="1920" height="1040" />
     </state>
     <state width="1256" height="393" key="GridCell.Tab.0.bottom/-1920.0.1280.693/0.0.2560.1400@0.0.2560.1400" timestamp="1605283342531" />
-    <state width="936" height="276" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.9.1920.1040@1920.9.1920.1040" timestamp="1605303157107" />
-    <state width="936" height="276" key="GridCell.Tab.0.center" timestamp="1605303157107">
+    <state width="936" height="272" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.9.1920.1040@1920.9.1920.1040" timestamp="1605618421162" />
+    <state width="936" height="272" key="GridCell.Tab.0.center" timestamp="1605618421162">
       <screen x="1920" y="9" width="1920" height="1040" />
     </state>
     <state width="1256" height="393" key="GridCell.Tab.0.center/-1920.0.1280.693/0.0.2560.1400@0.0.2560.1400" timestamp="1605283342530" />
-    <state width="936" height="276" key="GridCell.Tab.0.center/0.0.1280.680/1920.9.1920.1040@1920.9.1920.1040" timestamp="1605303157107" />
-    <state width="936" height="276" key="GridCell.Tab.0.left" timestamp="1605303157107">
+    <state width="936" height="272" key="GridCell.Tab.0.center/0.0.1280.680/1920.9.1920.1040@1920.9.1920.1040" timestamp="1605618421162" />
+    <state width="936" height="272" key="GridCell.Tab.0.left" timestamp="1605618421161">
       <screen x="1920" y="9" width="1920" height="1040" />
     </state>
     <state width="1256" height="393" key="GridCell.Tab.0.left/-1920.0.1280.693/0.0.2560.1400@0.0.2560.1400" timestamp="1605283342530" />
-    <state width="936" height="276" key="GridCell.Tab.0.left/0.0.1280.680/1920.9.1920.1040@1920.9.1920.1040" timestamp="1605303157107" />
-    <state width="936" height="276" key="GridCell.Tab.0.right" timestamp="1605303157107">
+    <state width="936" height="272" key="GridCell.Tab.0.left/0.0.1280.680/1920.9.1920.1040@1920.9.1920.1040" timestamp="1605618421161" />
+    <state width="936" height="272" key="GridCell.Tab.0.right" timestamp="1605618421162">
       <screen x="1920" y="9" width="1920" height="1040" />
     </state>
     <state width="1256" height="393" key="GridCell.Tab.0.right/-1920.0.1280.693/0.0.2560.1400@0.0.2560.1400" timestamp="1605283342530" />
-    <state width="936" height="276" key="GridCell.Tab.0.right/0.0.1280.680/1920.9.1920.1040@1920.9.1920.1040" timestamp="1605303157107" />
+    <state width="936" height="272" key="GridCell.Tab.0.right/0.0.1280.680/1920.9.1920.1040@1920.9.1920.1040" timestamp="1605618421162" />
+    <state x="2070" y="238" key="search.everywhere.popup" timestamp="1605304431974">
+      <screen x="1920" y="9" width="1920" height="1040" />
+    </state>
+    <state x="2070" y="238" key="search.everywhere.popup/0.0.1280.680/1920.9.1920.1040@1920.9.1920.1040" timestamp="1605304431974" />
   </component>
 </project>
